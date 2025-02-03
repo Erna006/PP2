@@ -1,10 +1,8 @@
-# Write a function that returns a sublist of movies with an IMDB score above 5.5.
-def above(movies):
-    new = []
+# Write a function that takes a category name and returns just those movies under that category.
+def Categ(n, movies):
     for movie in movies:
-        if movie["imdb"] > 5.5:
-            new.append(movie)
-    return new
+        if movie["category"] == n:
+            print(movie)
 
 movies = [
 {
@@ -84,6 +82,5 @@ movies = [
 }
 ]
 
-sublist = above(movies)
-for movie in sublist:
-    print(movie)
+n = input()
+Categ(n, movies)

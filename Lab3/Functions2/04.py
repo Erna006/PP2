@@ -1,10 +1,11 @@
-# Write a function that returns a sublist of movies with an IMDB score above 5.5.
-def above(movies):
-    new = []
+# Write a function that takes a list of movies and computes the average IMDB score.
+def Ave(movies):
+    sum = 0
+    cnt = 0
     for movie in movies:
-        if movie["imdb"] > 5.5:
-            new.append(movie)
-    return new
+        sum += movie["imdb"]
+        cnt += 1
+    return (sum / cnt)
 
 movies = [
 {
@@ -84,6 +85,4 @@ movies = [
 }
 ]
 
-sublist = above(movies)
-for movie in sublist:
-    print(movie)
+print(Ave(movies))

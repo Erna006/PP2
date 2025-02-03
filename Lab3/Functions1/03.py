@@ -4,6 +4,7 @@ def solve(h, l):
     y = int((4 * h - l) / 2)
     x = int(h - y)
     print(f"Rabbits =", x , f"Chickens =", y)
+
 h = int(input("NumHead = "))
 l = int(input("NumLegs = "))
 solve(h ,l)
