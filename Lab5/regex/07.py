@@ -1,6 +1,6 @@
 import re
 
-text = "decwe_srva_awrfa_vervaer"
+text = "hello_world_how_are_you"
 pattern = r"_([a-z])"
 
 def repl(match):
