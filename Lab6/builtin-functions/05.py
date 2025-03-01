@@ -1,5 +1,3 @@
-# def check_true(tuple):
-
 tuple = ("a", 1, "A", "B", 5, "")
 check = True
 for i in tuple:
